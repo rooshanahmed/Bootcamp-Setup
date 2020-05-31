@@ -4,12 +4,19 @@
     <title>GitHub Actions</title>
     <link rel="icon" href="./image/favicon.png">
     <style>
-        html {font-size: 24px; background-image: url('image/back.jpg');}
-        div.world {text-align: center;}
-        h1 {color: navy}
+        html {font-size: 24px;}
+        div.world {text-align: center; position: fixed; width: 100%;}
+        #video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+        }
     </style>
 </head>
 <body>
+    <video autoplay muted loop id="video" src="./image/videoplayback.mp4"></video>
     <div class="world">
         <h1>Hello World</h1>
         <p>Website deployed using <strong>GitHub Actions</strong></p>
